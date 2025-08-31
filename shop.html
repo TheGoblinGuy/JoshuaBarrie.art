@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Artist Name</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">ArtistName</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="shop-page">
+        <h1>Artwork Shop</h1>
+        <p class="subtitle">Originals, prints, and commissions.</p>
+
+        <!-- Simple Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="original">Originals</button>
+            <button class="filter-btn" data-filter="print">Prints</button>
+        </div>
+
+        <!-- Main Products Grid -->
+        <div class="gallery-grid" id="shop-container">
+            <!-- Products will be loaded here by script.js -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- We'll add a new script for shop-specific functions -->
+    <script src="shop-filter.js"></script>
+</body>
+</html>
