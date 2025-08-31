@@ -108,3 +108,108 @@ footer {
   background: #f8f8f8;
   margin-top: 4rem;
 }
+/* style.css - ADD THESE RULES */
+
+/* Shop Page Styles */
+.shop-page {
+  padding: 4rem 5%;
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #666;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+.filter-btn.active {
+  background: #000;
+  color: white;
+}
+
+/* About Page Styles */
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.about-hero img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+.about-text h1, .about-text h2 {
+  margin: 2rem 0 1rem 0;
+}
+.about-text ul {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Contact Page Styles */
+.contact-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  font-family: inherit;
+}
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contact-info {
+  background: #f8f8f8;
+  padding: 2rem;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social-links a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
